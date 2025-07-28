@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+    gap: 40px;
+}
+.column-left {
+    flex: 1;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+.title {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.description {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #555;
+    word-break: break-word;
+}
+
+.button-black {
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    width: fit-content;
+    font-weight: 500;
+}
+.column-right {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+}
+.image-pair {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+.img-large {
+    width: 250px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.img-down {
+    margin-top: 100px;
+}
+.button-black:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+}
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0 50px;
+    margin-top: 40px;
+}
+.gallery-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.gallery-item h2 {
+    font-size: 26px;
+    color: #aaa;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+.gallery-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 12px;
+    border-radius: 12px;
+    object-fit: cover;
+}
